@@ -242,6 +242,21 @@ public class Partida {
         return resultado;
     }
     
+    /**
+     * 
+     * @param fila
+     * @param columna
+     * @return
+     */
+    
+    private boolean casillaDisparada(int fila,int columna){
+    	if(this.misDisparos[fila][columna]==true){
+    		return true;
+    	}else{
+    		return false;
+    	}
+    }
+    
     /******************************************************************************************/
 	/*****************************     GETTERS y SETTERS    ***********************************/
 	/******************************************************************************************/
