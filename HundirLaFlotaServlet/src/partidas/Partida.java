@@ -270,4 +270,9 @@ public class Partida {
     public int getDisparos() {
     	return disparos;
     }
+    public int getCasilla(int fila,int columna){
+    	return mar[fila][columna];
+    }
+    
+    
 } // end class Partida
