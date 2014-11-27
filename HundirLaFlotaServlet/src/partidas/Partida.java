@@ -21,6 +21,9 @@ public class Partida {
 	            quedan,  					// numero de barcos no hundidos
 	            disparos; 					// numero de disparos efectuados
 	
+	private boolean [][] misDisparos;			// matriz que contiene las casillas sobre las que se ha efectuado
+
+	
 	/**
 	 * Contructor por defecto. No hace nada
 	 */
@@ -123,6 +126,22 @@ public class Partida {
 
 	/********************************    METODOS PRIVADOS  ********************************************/
     
+	/**
+	 * Método que crea e inicializa la variable misDisparos poniendo todas las casillas
+	 * a false.
+	 * @param rows	número de filas de la matriz.
+	 * @param cols	números de columnas de la matriz.
+	 */
+	
+	private void iniciaDisparos(int rows, int cols) {
+		this.misDisparos = new boolean[rows][cols];
+		
+		for (int i = 0; i < rows; i++) {
+			for( int j = 0; j < cols; j++ ) {
+				this.misDisparos[i][j] = false;
+			}
+		}
+	}
 	
 	/**
 	 * Coloca los barcos en el tablero
