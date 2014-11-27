@@ -50,6 +50,7 @@ public class Partida {
 		disparos = 0;
 		
 		ponBarcos();
+		iniciaDisparos(nf, nc);
 		
 		quedan = barcos.size();
 	}
