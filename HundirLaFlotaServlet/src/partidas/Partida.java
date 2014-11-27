@@ -50,6 +50,7 @@ public class Partida {
 		disparos = 0;
 		
 		ponBarcos();
+		iniciaDisparos(nf, nc);
 		
 		quedan = barcos.size();
 	}
@@ -62,6 +63,8 @@ public class Partida {
 	 */	
     public int pruebaCasilla(int f, int c) {
     	disparos++;
+    	
+    	this.misDisparos[f][c] = true;
     	
     	if (mar[f][c] == TOCADO || mar[f][c] == HUNDIDO || mar[f][c] == AGUA) {
     		return mar[f][c];
