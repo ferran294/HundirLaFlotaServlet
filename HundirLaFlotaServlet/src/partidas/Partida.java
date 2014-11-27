@@ -250,7 +250,6 @@ public class Partida {
      * @param columna
      * @return
      */
-    
     private boolean casillaDisparada(int fila,int columna){
     	if(this.misDisparos[fila][columna]==true){
     		return true;
@@ -263,13 +262,31 @@ public class Partida {
 	/*****************************     GETTERS y SETTERS    ***********************************/
 	/******************************************************************************************/
     
+    /**
+     * 
+     * @return
+     */
+    
     public int getQuedan() {
     	return quedan;
     }
     
+    /**
+     * 
+     * @return
+     */
+    
     public int getDisparos() {
     	return disparos;
     }
+    
+    /**
+     * 
+     * @param fila
+     * @param columna
+     * @return
+     */
+    
     public int getCasilla(int fila,int columna){
     	return mar[fila][columna];
     }
