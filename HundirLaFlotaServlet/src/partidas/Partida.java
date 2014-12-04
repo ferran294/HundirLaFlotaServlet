@@ -271,6 +271,10 @@ public class Partida {
     	return quedan;
     }
     
+    public int getNumBarcos() {
+    	return numBarcos;
+    }
+    
     /**
      * 
      * @return
