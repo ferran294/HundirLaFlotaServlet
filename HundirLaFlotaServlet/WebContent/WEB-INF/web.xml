@@ -19,4 +19,14 @@
     <servlet-name>HundirFlotaServlet</servlet-name>
     <url-pattern>/HundirFlotaServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SolucionPartidaServlet</display-name>
+    <servlet-name>SolucionPartidaServlet</servlet-name>
+    <servlet-class>servlets.SolucionPartidaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SolucionPartidaServlet</servlet-name>
+    <url-pattern>/SolucionPartidaServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
