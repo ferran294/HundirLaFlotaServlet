@@ -28,7 +28,8 @@ public class SalirPartidaServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession(true);
 		session.invalidate();
-		
+		response.sendRedirect("http://localhost:8080/HundirLaFlotaServlet/WebContent/index.html");
+
 	}
 
 }
