@@ -55,12 +55,12 @@ public class SolucionPartidaServlet extends HttpServlet {
 		out.println("<td></td>");
 
 		for (int i = 0; i < numColumnas; i++) { // Escribe la primera fila que												// representa las letras
-			out.println("<td>" + vectorLetras[i] + "</td>");
+			out.println("<td align='center'>" + vectorLetras[i] + "</td>");
 		}
 		out.println("</tr>");
 		for (int fila = 0; fila < numFilas; fila++) {
 			out.println("<tr>");
-			out.println("<td>" + fila + "</td>");
+			out.println("<td align='center'>" + fila + "</td>");
 			for (int col = 0; col < numColumnas; col++) {
 				if (partida.getCasilla(fila, col) != -1) {
 					out.println("<td style='background-color:red'></td>");
