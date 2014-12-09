@@ -295,5 +295,12 @@ public class Partida {
     	return mar[fila][columna];
     }
     
+    public int getNumFilas(){
+    	return numFilas;
+    }
+    
+    public int getNumCol(){
+    	return numColumnas;
+    }
     
 } // end class Partida
