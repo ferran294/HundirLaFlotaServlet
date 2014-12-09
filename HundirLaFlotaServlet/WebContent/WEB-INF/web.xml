@@ -29,4 +29,24 @@
     <servlet-name>SolucionPartidaServlet</servlet-name>
     <url-pattern>/SolucionPartidaServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NuevaPartidaServlet</display-name>
+    <servlet-name>NuevaPartidaServlet</servlet-name>
+    <servlet-class>servlets.NuevaPartidaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NuevaPartidaServlet</servlet-name>
+    <url-pattern>/NuevaPartidaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SalirPartidaServlet</display-name>
+    <servlet-name>SalirPartidaServlet</servlet-name>
+    <servlet-class>servlets.SalirPartidaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalirPartidaServlet</servlet-name>
+    <url-pattern>/SalirPartidaServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
