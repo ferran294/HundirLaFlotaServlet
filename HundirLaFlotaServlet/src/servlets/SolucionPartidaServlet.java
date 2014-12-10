@@ -72,11 +72,9 @@ public class SolucionPartidaServlet extends HttpServlet {
 		}
 		
 		out.println("</table>");
-		/*
-		 * FALTA IMPLEMENTAR LOS ENLACES
-		 * NUEVA PARTIDA Y SALIR
-		 * 
-		 */
+		out.println("<br>");
+		out.println("<a href='NuevaPartidaServlet'>Nueva Partida</a>");
+		out.println("<a href='SalirPartidaServlet'>Salir</a>");
 		out.println("</body>");
 		out.println("</html>");
 
